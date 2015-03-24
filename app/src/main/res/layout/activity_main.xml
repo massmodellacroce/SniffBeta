@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.sniff.sniffbeta.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MapIntro"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:height="400dp"
+        android:text="Map"
+        android:textSize="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag Pet"
+        android:id="@+id/TagPetIntro"
+        android:layout_alignParentBottom="true"
+        android:width="30dp"
+        android:height="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search My Pet"
+        android:id="@+id/SearchMyPetIntro"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/TagPetIntro"
+        android:width="30dp"
+        android:height="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:id="@+id/ProfileIntro"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/SearchMyPetIntro"
+        android:layout_toEndOf="@+id/SearchMyPetIntro"
+        android:width="30dp"
+        android:height="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/SettingsIntro"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:width="30dp"
+        android:height="100dp" />
+
+</RelativeLayout>
