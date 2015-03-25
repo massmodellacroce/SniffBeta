@@ -3,9 +3,72 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_my_pet">My Pets</string>
+    <string name="title_activity_my_pet">My Pet</string>
     <string name="title_activity_register">Register Activity</string>
+    <string name="title_activity_registration_profile">Register Activity</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_registration_lost_pet">Registration Lost Pet</string>
+    <string name="pref_title_sync_frequency" />
+    <string name="pref_title_system_sync_settings" />
+    <string name="pref_title_social_recommendations" />
+    <string name="pref_description_social_recommendations" />
+    <string name="pref_title_display_name" />
+    <string name="pref_default_display_name" />
+    <string name="pref_title_add_friends_to_messages" />
+    <string name="pref_header_general" />
+    <string name="pref_header_notifications" />
+    <string name="pref_header_data_sync" />
+    <string name="pref_title_new_message_notifications" />
+    <string name="pref_title_ringtone" />
+    <string name="pref_title_vibrate" />
     <string name="title_activity_register_lost_pet">Register Lost Pet</string>
-    <string name="title_activity_registration_profile">Registration Profile</string>
+
+    // Dog Breeds String
+    <string-array name="breed">
+        <item>breed1</item>
+        <item>breed2</item>
+        <item>breed3</item>
+    </string-array>
+
+    // Dog Color1
+    <string-array name="color1">
+        <item>color1</item>
+        <item>color2</item>
+        <item>color3</item>
+    </string-array>
+
+    // Dog Color2
+    <string-array name="color2">
+        <item>color2</item>
+        <item>color3</item>
+        <item>color4</item>
+    </string-array>
+
+    // Dog TypeCollar
+    <string-array name="typeCollar">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    // Dog CollarColor
+    <string-array name="collarColor">
+        <item>color2</item>
+        <item>color3</item>
+        <item>color4</item>
+    </string-array>
+
+    // Dog Age
+    <string-array name="age">
+        <item>young</item>
+        <item>adult</item>
+        <item>old</item>
+    </string-array>
+
+    // Dog Took
+    <string-array name="took">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
 </resources>

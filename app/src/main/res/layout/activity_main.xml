@@ -12,11 +12,10 @@
         android:id="@+id/MapIntro"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:height="400dp"
         android:text="Map"
-        android:textSize="50dp" />
+        android:textSize="50dp"
+        android:layout_toStartOf="@+id/SettingsIntro" />
 
     <Button
         android:layout_width="wrap_content"
@@ -58,5 +57,27 @@
         android:layout_alignParentEnd="true"
         android:width="30dp"
         android:height="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/SigninMain"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/MapIntro"
+        android:layout_toEndOf="@+id/MapIntro"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create account"
+        android:id="@+id/CreateAccount"
+        android:layout_below="@+id/SigninMain"
+        android:layout_toRightOf="@+id/MapIntro"
+        android:layout_toEndOf="@+id/MapIntro"
+        android:textSize="10dp" />
 
 </RelativeLayout>

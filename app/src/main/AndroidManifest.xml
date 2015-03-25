@@ -32,16 +32,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterLostPet"
-            android:label="@string/title_activity_register_lost_pet" >
-        </activity>
-
-        <activity
             android:name=".RegistrationProfile"
             android:label="@string/title_activity_registration_profile" >
         </activity>
-        </application>
-
-
+        <activity
+            android:name=".RegisterLostPet"
+            android:label="@string/title_activity_register_lost_pet" >
+        </activity>
+        <activity
+            android:name=".LogInActivity"
+            android:label="@string/title_activity_log_in"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+    </application>
 
 </manifest>

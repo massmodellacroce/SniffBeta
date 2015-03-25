@@ -10,23 +10,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="First Name"
         android:ems="10"
-        android:id="@+id/FirstNameProfile"
+        android:id="@+id/editFirstName"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp" />
+        android:hint="First name" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Last Name"
         android:ems="10"
-        android:id="@+id/LastNameProfile"
-        android:layout_marginTop="27dp"
-        android:layout_below="@+id/FirstNameProfile"
+        android:id="@+id/editLastName"
+        android:hint="Last name"
+        android:layout_below="@+id/editFirstName"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -35,10 +33,9 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/EmailProfile"
-        android:layout_marginTop="25dp"
-        android:text="e-mail"
-        android:layout_below="@+id/LastNameProfile"
+        android:id="@+id/editEmail"
+        android:hint="Email"
+        android:layout_below="@+id/editLastName"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -47,22 +44,20 @@
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
         android:ems="10"
-        android:id="@+id/AdressProfile"
-        android:text="Adress"
-        android:layout_below="@+id/EmailProfile"
+        android:id="@+id/editAdress"
+        android:hint="Adress"
+        android:layout_below="@+id/editEmail"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="29dp" />
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:ems="10"
-        android:id="@+id/PhoneProfile"
-        android:text="Phone"
-        android:layout_marginTop="24dp"
-        android:layout_below="@+id/AdressProfile"
+        android:id="@+id/editPhone"
+        android:hint="Phone"
+        android:layout_below="@+id/editAdress"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -71,10 +66,9 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/PasswordProfile"
-        android:layout_marginTop="25dp"
-        android:text="Password"
-        android:layout_below="@+id/PhoneProfile"
+        android:id="@+id/editPassword"
+        android:hint="Password"
+        android:layout_below="@+id/editPhone"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -83,30 +77,28 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/RepeatPasswordProfile"
-        android:text="Repeat Password"
-        android:layout_below="@+id/PasswordProfile"
+        android:id="@+id/editConfirmPassword"
+        android:hint="Confirm password"
+        android:layout_below="@+id/editPassword"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="31dp" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"
-        android:id="@+id/SaveProfile"
+        android:id="@+id/saveProfile"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="saveProfile"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cancel"
-        android:id="@+id/CancelProfile"
-        android:layout_alignTop="@+id/SaveProfile"
-        android:layout_toRightOf="@+id/SaveProfile"
-        android:layout_toEndOf="@+id/SaveProfile"
-        android:layout_marginLeft="46dp"
-        android:layout_marginStart="46dp" />
+        android:id="@+id/cancelProfile"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
 </RelativeLayout>

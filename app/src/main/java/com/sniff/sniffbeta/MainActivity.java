@@ -21,6 +21,8 @@ public class MainActivity extends ActionBarActivity {
         Button showSearchMyPetIntroButton = (Button) findViewById(R.id.SearchMyPetIntro);
         Button showProfileIntroButton = (Button) findViewById(R.id.ProfileIntro);
         Button showSettingsIntroButton = (Button) findViewById(R.id.SettingsIntro);
+        Button showSigninMainButton = (Button) findViewById(R.id.SigninMain);
+        Button showCreateAccountButton = (Button) findViewById(R.id.CreateAccount);
 
         //Create each the method so each button take to other activity
 
@@ -67,6 +69,28 @@ public class MainActivity extends ActionBarActivity {
             }
         };
         showSettingsIntroButton.setOnClickListener(listenerSettingsIntroButton);
+
+        // Que Boton Sign In Main vaya a la Actividad LogInActivity cuando se le haga Click.
+        View.OnClickListener listenerSigninMainButton = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Dirigirlo a la Pagina de LoginActivity.
+
+                startActivity(new Intent(getApplicationContext(), LogInActivity.class));
+            }
+        };
+        showSigninMainButton.setOnClickListener(listenerSigninMainButton);
+
+        // Que Boton Create Account Main vaya a la Actividad RegistrationProfile Activity cuando se le haga Click.
+        View.OnClickListener listenerCreateAccountButton = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Dirigirlo a la Pagina de RegistrationProfile.
+
+                startActivity(new Intent(getApplicationContext(), RegistrationProfile.class));
+            }
+        };
+        showCreateAccountButton.setOnClickListener(listenerCreateAccountButton);
     }
 
 
