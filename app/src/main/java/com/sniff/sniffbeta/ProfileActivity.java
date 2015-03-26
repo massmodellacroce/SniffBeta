@@ -27,7 +27,9 @@ public class ProfileActivity extends ActionBarActivity {
             public void onClick(View v) {
 
                 // Dirigirlo a la Pagina de Informacion Personal
+
                 startActivity(new Intent(getApplicationContext(),RegistrationProfile.class));
+
 
 
 

@@ -70,5 +70,6 @@
         <item>yes</item>
         <item>no</item>
     </string-array>
+    <string name="title_activity_registration_profile2">Registration Profile 2</string>
 
 </resources>

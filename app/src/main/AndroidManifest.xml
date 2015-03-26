@@ -44,6 +44,10 @@
             android:label="@string/title_activity_log_in"
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
+        <activity
+            android:name=".RegistrationProfile2"
+            android:label="@string/title_activity_registration_profile2" >
+        </activity>
     </application>
 
 </manifest>

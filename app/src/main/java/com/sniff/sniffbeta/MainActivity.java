@@ -32,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 // Dirigirlo a la Pagina para ingresar Info Perro perdido.
 
-                startActivity(new Intent(getApplicationContext(), RegisterLostPet.class));
+                startActivity(new Intent(getApplicationContext(),RegisterLostPet.class));
 
 
             }
