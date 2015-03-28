@@ -47,6 +47,8 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 // Dirigirlo a la Pagina de las mascotas que esta buscando.
 
+                startActivity(new Intent(getApplicationContext(),MyPets.class));
+
             }
         };
         showSearchMyPetIntroButton.setOnClickListener(listenerSearchMyPetIntroButton);

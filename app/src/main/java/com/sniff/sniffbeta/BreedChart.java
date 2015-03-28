@@ -16,7 +16,7 @@ public class BreedChart extends ActionBarActivity {
         setContentView(R.layout.activity_breed_chart);
     }
 
-    public void Back (View view){
+    public void back (View view){
 
         Intent intent = new Intent(this,RegisterLostPet.class);
 

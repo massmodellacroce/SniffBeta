@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 
 public class RegisterLostPet extends ActionBarActivity implements AdapterView.OnItemSelectedListener {
@@ -88,6 +89,11 @@ public class RegisterLostPet extends ActionBarActivity implements AdapterView.On
         Intent intent = new Intent(this,BreedChart.class);
 
         startActivity(intent);
+    }
+
+    public void tagPet (View view){
+
+        Toast.makeText(this, "Tag Successfully", Toast.LENGTH_LONG).show();
     }
 
 

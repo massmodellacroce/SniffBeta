@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 
 public class MyPets extends ActionBarActivity {
@@ -25,6 +26,10 @@ public class MyPets extends ActionBarActivity {
         Intent intent = new Intent(this,RegisterLostPet.class);
         intent.putExtra("action","MyPet");
         startActivity(intent);
+    }
+
+    public void save (View view){
+        Toast.makeText(this, "Saved Successfully", Toast.LENGTH_LONG).show();
     }
 
 

@@ -20,7 +20,7 @@ public class ProfileActivity extends ActionBarActivity {
         // Declare our View Variables and assign the Views from the Layout File.
         Button showMyInfoButton = (Button) findViewById(R.id.MyInfo);
         Button showMyPetButton = (Button) findViewById(R.id.MyPets);
-        Button showLostMyDogButton = (Button) findViewById(R.id.LostMyDog);
+
 
         // Que Boton MyInfo vaya a la Actividad RegistrationProfile cuando se le haga Click.
         View.OnClickListener listenerMyInfo = new View.OnClickListener() {
@@ -57,7 +57,7 @@ public class ProfileActivity extends ActionBarActivity {
 
             }
         };
-        showLostMyDogButton.setOnClickListener(listenerLostMyDog);
+
 
 
     }
