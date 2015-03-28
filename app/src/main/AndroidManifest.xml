@@ -32,10 +32,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegistrationProfile"
-            android:label="@string/title_activity_registration_profile" >
-        </activity>
-        <activity
             android:name=".RegisterLostPet"
             android:label="@string/title_activity_register_lost_pet" >
         </activity>
@@ -47,6 +43,22 @@
         <activity
             android:name=".RegistrationProfile2"
             android:label="@string/title_activity_registration_profile2" >
+        </activity>
+        <activity
+            android:name=".MyPets"
+            android:label="@string/title_activity_my_pets" >
+        </activity>
+        <activity
+            android:name=".Pet1"
+            android:label="@string/title_activity_pet1" >
+        </activity>
+        <activity
+            android:name=".BreedChart"
+            android:label="@string/title_activity_breed_chart" >
+        </activity>
+        <activity
+            android:name=".Prueba"
+            android:label="@string/title_activity_prueba" >
         </activity>
     </application>
 

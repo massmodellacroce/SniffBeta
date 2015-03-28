@@ -32,7 +32,9 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 // Dirigirlo a la Pagina para ingresar Info Perro perdido.
 
-                startActivity(new Intent(getApplicationContext(),RegisterLostPet.class));
+                Intent intent = new Intent(getApplicationContext(), RegisterLostPet.class);
+                intent.putExtra("action", "LostPet");
+                startActivity(intent);
 
 
             }
@@ -50,7 +52,7 @@ public class MainActivity extends ActionBarActivity {
         showSearchMyPetIntroButton.setOnClickListener(listenerSearchMyPetIntroButton);
 
         // Que Boton Profile vaya a la Actividad ¿¿?? cuando se le haga Click.
-        View.OnClickListener listenerProfileIntroButto = new View.OnClickListener() {
+        View.OnClickListener listenerProfileIntroButton = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Dirigirlo a la Pagina de su Perfil.
@@ -58,7 +60,7 @@ public class MainActivity extends ActionBarActivity {
 
             }
         };
-        showProfileIntroButton.setOnClickListener(listenerProfileIntroButto);
+        showProfileIntroButton.setOnClickListener(listenerProfileIntroButton);
 
         // Que Boton Settings vaya a la Actividad ¿¿?? cuando se le haga Click.
         View.OnClickListener listenerSettingsIntroButton = new View.OnClickListener() {
@@ -87,7 +89,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 // Dirigirlo a la Pagina de RegistrationProfile.
 
-                startActivity(new Intent(getApplicationContext(), RegistrationProfile.class));
+                startActivity(new Intent(getApplicationContext(), RegistrationProfile2.class));
             }
         };
         showCreateAccountButton.setOnClickListener(listenerCreateAccountButton);

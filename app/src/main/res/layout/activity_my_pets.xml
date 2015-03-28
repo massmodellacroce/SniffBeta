@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.sniff.sniffbeta.MyPets">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pet1"
+        android:minHeight="120dp"
+        android:minWidth="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pet2"
+        android:minHeight="120dp"
+        android:minWidth="120dp"
+        android:layout_below="@+id/pet1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addPet"
+        android:layout_below="@+id/pet2"
+        android:layout_alignRight="@+id/pet2"
+        android:layout_alignEnd="@+id/pet2"
+        android:minWidth="120dp"
+        android:minHeight="120dp"
+        android:onClick="addMyPet"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveMyPets"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/addPet"
+        android:layout_alignEnd="@+id/addPet" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancelMyPets"
+        android:layout_alignBottom="@+id/saveMyPets"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="42dp"
+        android:layout_marginEnd="42dp"
+        android:onClick="Cancel"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lost Pet1"
+        android:id="@+id/switchPet1"
+        android:checked="false"
+        android:layout_above="@+id/pet2"
+        android:layout_alignLeft="@+id/cancelMyPets"
+        android:layout_alignStart="@+id/cancelMyPets"
+        android:splitTrack="false"
+        android:singleLine="false"
+        android:showText="false"
+        android:nestedScrollingEnabled="false"
+        android:longClickable="false"
+        android:clickable="false" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lost Pet 2"
+        android:id="@+id/switchPet2"
+        android:checked="false"
+        android:clickable="false"
+        android:elegantTextHeight="false"
+        android:focusable="false"
+        android:showText="false"
+        android:splitTrack="false"
+        android:layout_above="@+id/addPet"
+        android:layout_alignLeft="@+id/switchPet1"
+        android:layout_alignStart="@+id/switchPet1" />
+
+</RelativeLayout>

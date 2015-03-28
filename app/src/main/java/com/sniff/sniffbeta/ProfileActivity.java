@@ -3,6 +3,7 @@ package com.sniff.sniffbeta;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,22 +28,22 @@ public class ProfileActivity extends ActionBarActivity {
             public void onClick(View v) {
 
                 // Dirigirlo a la Pagina de Informacion Personal
-
-                startActivity(new Intent(getApplicationContext(),RegistrationProfile.class));
-
-
-
-
+                Log.d("ProfileActivity", "Calling RegistrationProfile2");
+                startActivity(new Intent(getApplicationContext(), RegistrationProfile2.class));
 
             }
         };
         showMyInfoButton.setOnClickListener(listenerMyInfo);
 
+
         // Que Boton MyPet vaya a la Actividad ¿¿? cuando se le haga Click.
         View.OnClickListener listenerMyPet = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 // Dirigirlo a la Pagina de My Pets
+                startActivity(new Intent(getApplicationContext(),MyPets.class));
+
 
             }
         };
@@ -59,6 +60,12 @@ public class ProfileActivity extends ActionBarActivity {
         showLostMyDogButton.setOnClickListener(listenerLostMyDog);
 
 
+    }
+
+    public void back (View view){
+        Intent intent=new Intent(this,MainActivity.class);
+
+       startActivity(intent);
     }
 
 

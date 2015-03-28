@@ -71,5 +71,10 @@
         <item>no</item>
     </string-array>
     <string name="title_activity_registration_profile2">Registration Profile 2</string>
+    <string name="title_activity_registration_profile3">Registration Profile 3</string>
+    <string name="title_activity_my_pets">My Pets</string>
+    <string name="title_activity_pet1">Pet 1</string>
+    <string name="title_activity_breed_chart">Breed Chart</string>
+    <string name="title_activity_prueba">Prueba</string>
 
 </resources>

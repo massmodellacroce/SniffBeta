@@ -1,5 +1,6 @@
 package com.sniff.sniffbeta;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -25,6 +26,16 @@ public class RegisterLostPet extends ActionBarActivity implements AdapterView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_lost_pet);
+        String action = getIntent().getExtras().getString("action");
+        String title;
+        if ("MyPet".equals(action)) {
+            title = "Register My Pet";
+        } else if ("LostPet".equals(action)) {
+            title = "Register Lost Pet";
+        } else {
+            title = "Not sure what we are doing here...";
+        }
+        setTitle(title);
 
         // Spinner Breed
         spinnerBreed = (Spinner) findViewById(R.id.spinnerBreed);
@@ -63,6 +74,22 @@ public class RegisterLostPet extends ActionBarActivity implements AdapterView.On
 
 
     }
+
+    public void Cancel(View view){
+
+        Intent intent = new Intent(this,MainActivity.class);
+
+        startActivity(intent);
+
+    }
+
+    public void BreedChart (View view){
+
+        Intent intent = new Intent(this,BreedChart.class);
+
+        startActivity(intent);
+    }
+
 
 
     @Override
