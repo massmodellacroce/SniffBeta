@@ -10,7 +10,7 @@
     <Button
         android:layout_width="80dp"
         android:layout_height="40dp"
-        android:text="Tag a dog"
+        android:text="Tag a pet"
         android:id="@+id/TagPetIntro"
         android:layout_alignParentBottom="true"
         android:width="30dp"
@@ -24,7 +24,7 @@
     <Button
         android:layout_width="80dp"
         android:layout_height="40dp"
-        android:text="I lost my dog!"
+        android:text="I lost my pet!"
         android:id="@+id/SearchMyPetIntro"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/TagPetIntro"
@@ -95,15 +95,12 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="SNIFF!"
         android:id="@+id/textViewAppName"
-        android:layout_alignBottom="@+id/CreateAccount"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="60dp"
+        android:textSize="50dp"
         android:textColor="#3079ab"
         android:textStyle="bold"
         android:typeface="sans"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="10dp" />
+        android:layout_below="@+id/SigninMain"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="40dp"
