@@ -76,5 +76,6 @@
     <string name="title_activity_pet1">Pet 1</string>
     <string name="title_activity_breed_chart">Breed Chart</string>
     <string name="title_activity_prueba">Prueba</string>
+    <string name="title_activity_profile_info">ProfileInfo</string>
 
 </resources>

@@ -60,6 +60,10 @@
             android:name=".Prueba"
             android:label="@string/title_activity_prueba" >
         </activity>
+        <activity
+            android:name=".ProfileInfo"
+            android:label="@string/title_activity_profile_info" >
+        </activity>
     </application>
 
 </manifest>

@@ -10,6 +10,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.sniff.sniffbeta.model.Profile;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -40,48 +43,17 @@ public class RegistrationProfile2 extends ActionBarActivity {
 
     public void Save (View view) {
         Log.d("RegistrationProfile2", ""  + firstName.getText());
+        Profile profile = new Profile();
+        profile.firstName=firstName.getText().toString();
+        profile.lastName=lastName.getText().toString();
+        profile.email=email.getText().toString();
+        profile.adress=adress.getText().toString();
+        profile.phone=phone.getText().toString();
+        profile.password=password.getText().toString();
+        profile.confirmPassword=confirmPassword.getText().toString();
 
-        String textFirstName=firstName.getText().toString();
-        String textLastName=lastName.getText().toString();
-        String textEmail=email.getText().toString();
-        String textAdress=adress.getText().toString();
-        String textPhone=phone.getText().toString();
-        String textPassword=password.getText().toString();
-        String textConfirmPassword=confirmPassword.getText().toString();
+        Profile.saveProfile(this, profile);
 
-
-        textFirstName=textFirstName+" ";
-        textLastName=textLastName+" ";
-        textEmail=textEmail+" ";
-        textAdress=textAdress+" ";
-        textPhone=textPhone+" ";
-        textPassword=textPassword+" ";
-        textConfirmPassword=textConfirmPassword+" ";
-
-
-        FileOutputStream fos = null;
-        try {
-            fos = openFileOutput("registration.txt", Context.MODE_PRIVATE);
-
-
-            fos.write(textFirstName.getBytes());
-            fos.write(textLastName.getBytes());
-            fos.write(textEmail.getBytes());
-            fos.write(textAdress.getBytes());
-            fos.write(textPhone.getBytes());
-            fos.write(textPassword.getBytes());
-            fos.write(textConfirmPassword.getBytes());
-
-        } catch (IOException e){
-            e.printStackTrace();
-        }
-        finally {
-            try {
-                fos.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
         Toast.makeText(this,"Saved successfully",Toast.LENGTH_LONG).show();
 
     }

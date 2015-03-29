@@ -22,14 +22,14 @@ public class ProfileActivity extends ActionBarActivity {
         Button showMyPetButton = (Button) findViewById(R.id.MyPets);
 
 
-        // Que Boton MyInfo vaya a la Actividad RegistrationProfile cuando se le haga Click.
+        // Que Boton MyInfo vaya a la Actividad ProfileInfo cuando se le haga Click.
         View.OnClickListener listenerMyInfo = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 // Dirigirlo a la Pagina de Informacion Personal
                 Log.d("ProfileActivity", "Calling RegistrationProfile2");
-                startActivity(new Intent(getApplicationContext(), RegistrationProfile2.class));
+                startActivity(new Intent(getApplicationContext(), ProfileInfo.class));
 
             }
         };
