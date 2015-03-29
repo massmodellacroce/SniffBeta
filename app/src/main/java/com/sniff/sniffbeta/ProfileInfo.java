@@ -1,5 +1,6 @@
 package com.sniff.sniffbeta;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -41,10 +42,19 @@ public class ProfileInfo extends ActionBarActivity {
 
     }
 
-    public void load (View view){
-
-
+    public void back (View view){
+        onBackPressed();
     }
+
+    public void changeProfileInfo (View view){
+
+        Intent intent = new Intent(this, RegistrationProfile2.class);
+
+        startActivity(intent);
+    }
+
+
+
 
 
     @Override

@@ -14,7 +14,7 @@
         android:text="Save"
         android:id="@+id/saveMyPets"
         android:layout_alignParentBottom="true"
-        android:onClick="save"
+        android:onClick="saveBack"
         android:textColor="#ffffff"
         android:textStyle="bold"
         android:background="#3079ab"
@@ -115,24 +115,32 @@
         android:layout_height="wrap_content"
         android:text="Edit"
         android:id="@+id/editPet1"
-        android:layout_alignBottom="@+id/imagePet1"
-        android:layout_alignRight="@+id/switchPet2"
-        android:layout_alignEnd="@+id/switchPet2"
         android:textColor="#ffffff"
         android:background="#3079ab"
-        android:onClick="addMyPet"/>
+        android:onClick="addMyPet"
+        android:minHeight="20dp"
+        android:minWidth="70dp"
+        android:textSize="10dp"
+        android:layout_below="@+id/switchPet1"
+        android:layout_alignLeft="@+id/switchPet1"
+        android:layout_alignStart="@+id/switchPet1"
+        android:layout_marginTop="27dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Edit"
         android:id="@+id/editPet2"
-        android:layout_above="@+id/imagePet3"
-        android:layout_alignRight="@+id/switchPet3"
-        android:layout_alignEnd="@+id/switchPet3"
         android:textColor="#ffffff"
         android:background="#3079ab"
-        android:onClick="addMyPet"/>
+        android:onClick="addMyPet"
+        android:minHeight="20dp"
+        android:minWidth="70dp"
+        android:textSize="10dp"
+        android:layout_below="@+id/switchPet2"
+        android:layout_alignLeft="@+id/switchPet2"
+        android:layout_alignStart="@+id/switchPet2"
+        android:layout_marginTop="26dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -142,8 +150,12 @@
         android:textColor="#ffffff"
         android:background="#3079ab"
         android:onClick="addMyPet"
-        android:layout_alignBottom="@+id/imagePet3"
-        android:layout_alignRight="@+id/switchPet3"
-        android:layout_alignEnd="@+id/switchPet3" />
+        android:minHeight="20dp"
+        android:minWidth="70dp"
+        android:textSize="10dp"
+        android:layout_below="@+id/switchPet3"
+        android:layout_alignLeft="@+id/switchPet3"
+        android:layout_alignStart="@+id/switchPet3"
+        android:layout_marginTop="23dp" />
 
 </RelativeLayout>

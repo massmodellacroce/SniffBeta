@@ -85,6 +85,11 @@ public class MyPets extends ActionBarActivity {
         startActivity(intent);
     }
 
+    public void saveBack (View view){
+        onBackPressed();
+        Toast.makeText(this,"Saved successfully",Toast.LENGTH_LONG).show();
+    }
+
 
 
 

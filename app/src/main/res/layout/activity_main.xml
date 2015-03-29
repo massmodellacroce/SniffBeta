@@ -93,7 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="SNIFF!"
+        android:text="Sniff!"
         android:id="@+id/textViewAppName"
         android:textSize="50dp"
         android:textColor="#3079ab"

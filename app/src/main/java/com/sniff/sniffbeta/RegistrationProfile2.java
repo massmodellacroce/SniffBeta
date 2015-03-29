@@ -58,6 +58,10 @@ public class RegistrationProfile2 extends ActionBarActivity {
 
     }
 
+    public void back (View view){
+        onBackPressed();
+    }
+
     public void Cancel (View view)
     {
         Intent intent = new Intent(this,MainActivity.class);

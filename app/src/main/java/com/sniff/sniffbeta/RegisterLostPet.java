@@ -76,12 +76,12 @@ public class RegisterLostPet extends ActionBarActivity implements AdapterView.On
 
     }
 
-    public void Cancel(View view){
 
-        Intent intent = new Intent(this,MainActivity.class);
 
-        startActivity(intent);
 
+
+    public void back (View view){
+        onBackPressed();
     }
 
     public void BreedChart (View view){

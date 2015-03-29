@@ -17,7 +17,7 @@
         android:layout_height="30dp"
         android:text="Back"
         android:id="@+id/backBreedingChart"
-        android:onClick="Back"
+        android:onClick="back"
         android:layout_alignWithParentIfMissing="false"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"

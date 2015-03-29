@@ -86,7 +86,7 @@
         android:layout_height="wrap_content"
         android:text="Cancel"
         android:id="@+id/cancelTagPet"
-        android:onClick="Cancel"
+        android:onClick="back"
         android:layout_alignTop="@+id/tagPet"
         android:layout_alignRight="@+id/breedChart"
         android:layout_alignEnd="@+id/breedChart"
@@ -98,15 +98,12 @@
         android:layout_height="40dp"
         android:text="Breed Chart"
         android:id="@+id/breedChart"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:onClick="BreedChart"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
         android:background="#3079ab"
-        android:clickable="false"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/spinnerBreed"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="80dp"
