@@ -21,7 +21,7 @@
         android:layout_alignWithParentIfMissing="false"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="#51b46d"
+        android:background="#3079ab"
         android:textColor="#ffffff"
         android:textStyle="bold"
         android:textAlignment="center" />

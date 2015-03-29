@@ -79,7 +79,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:textColor="#ffffff"
-        android:background="#e0ab18" />
+        android:background="#3079ab" />
 
     <Button
         android:layout_width="wrap_content"
@@ -90,7 +90,7 @@
         android:layout_alignTop="@+id/tagPet"
         android:layout_alignRight="@+id/breedChart"
         android:layout_alignEnd="@+id/breedChart"
-        android:background="#e0ab18"
+        android:background="#3079ab"
         android:textColor="#ffffff" />
 
     <Button
@@ -104,8 +104,18 @@
         android:onClick="BreedChart"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
-        android:background="#e0ab18"
+        android:background="#3079ab"
         android:clickable="false"
         android:textColor="#ffffff" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView7"
+        android:src="@drawable/blue_dog_footprint"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/breedChart"
+        android:layout_alignEnd="@+id/breedChart"
+        android:layout_marginRight="30dp" />
 
 </RelativeLayout>
