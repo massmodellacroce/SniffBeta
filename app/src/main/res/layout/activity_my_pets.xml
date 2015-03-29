@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.sniff.sniffbeta.MyPets"
-    android:background="#3079ab">
+    >
 
 
     <Button
@@ -14,12 +14,7 @@
         android:text="Save"
         android:id="@+id/saveMyPets"
         android:layout_alignParentBottom="true"
-        android:onClick="save"
-        android:textColor="#3079ab"
-        android:textStyle="bold"
-        android:background="#ffffff"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="20dp" />
+        android:onClick="save"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -31,15 +26,12 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="42dp"
         android:layout_marginEnd="42dp"
-        android:onClick="Cancel"
-        android:textColor="#3079ab"
-        android:textStyle="bold"
-        android:background="#ffffff" />
+        android:onClick="Cancel"/>
 
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lost?"
+        android:text="Lost Pet1"
         android:id="@+id/switchPet1"
         android:checked="false"
         android:splitTrack="false"
@@ -48,20 +40,17 @@
         android:nestedScrollingEnabled="false"
         android:longClickable="false"
         android:clickable="false"
-        android:layout_alignTop="@+id/imagePet1"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp" />
+        android:layout_alignParentEnd="true" />
 
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lost?"
+        android:text="Lost Pet 2"
         android:id="@+id/switchPet2"
         android:checked="false"
-        android:layout_alignTop="@+id/imagePet2"
-        android:layout_alignRight="@+id/switchPet1"
-        android:layout_alignEnd="@+id/switchPet1" />
+        android:layout_alignLeft="@+id/switchPet1"
+        android:layout_alignStart="@+id/switchPet1" />
 
     <ImageView
         android:layout_width="120dp"
@@ -72,7 +61,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="10dp"
         android:focusable="true"
-        android:onClick="addMyPet1"
+        android:onClick="addMyPet"
        android:src="@drawable/default_dog_icon" />
 
     <ImageView
@@ -83,7 +72,6 @@
         android:layout_alignRight="@+id/imagePet1"
         android:layout_alignEnd="@+id/imagePet1"
         android:layout_marginTop="20dp"
-        android:onClick="addMyPet2"
         android:src="@drawable/default_dog_icon" />
 
     <ImageView
@@ -94,17 +82,6 @@
         android:layout_alignLeft="@+id/imagePet2"
         android:layout_alignStart="@+id/imagePet2"
         android:layout_marginTop="20dp"
-        android:onClick="addMyPet3"
         android:src="@drawable/default_dog_icon" />
-
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lost?"
-        android:id="@+id/switchPet3"
-        android:checked="false"
-        android:layout_alignTop="@+id/imagePet3"
-        android:layout_alignLeft="@+id/switchPet2"
-        android:layout_alignStart="@+id/switchPet2" />
 
 </RelativeLayout>

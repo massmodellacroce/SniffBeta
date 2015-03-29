@@ -27,7 +27,7 @@ public class RegisterLostPet extends ActionBarActivity implements AdapterView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_lost_pet);
-        String action = getIntent().getExtras()!=null?getIntent().getExtras().getString("action"):"";
+        String action = getIntent().getExtras().getString("action");
         String title;
         if ("MyPet".equals(action)) {
             title = "Register My Pet";

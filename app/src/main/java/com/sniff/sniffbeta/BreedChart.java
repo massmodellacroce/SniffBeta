@@ -17,9 +17,11 @@ public class BreedChart extends ActionBarActivity {
     }
 
     public void back (View view){
-        onBackPressed();
-    }
 
+        Intent intent = new Intent(this,RegisterLostPet.class);
+
+        startActivity(intent);
+    }
 
 
     @Override
@@ -43,6 +45,4 @@ public class BreedChart extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-
 }

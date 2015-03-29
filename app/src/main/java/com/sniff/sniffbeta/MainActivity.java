@@ -20,6 +20,7 @@ public class MainActivity extends ActionBarActivity {
         Button showTagPetIntroButton = (Button) findViewById(R.id.TagPetIntro);
         Button showSearchMyPetIntroButton = (Button) findViewById(R.id.SearchMyPetIntro);
         Button showProfileIntroButton = (Button) findViewById(R.id.ProfileIntro);
+        Button showSettingsIntroButton = (Button) findViewById(R.id.SettingsIntro);
         Button showSigninMainButton = (Button) findViewById(R.id.SigninMain);
         Button showCreateAccountButton = (Button) findViewById(R.id.CreateAccount);
 
@@ -71,6 +72,7 @@ public class MainActivity extends ActionBarActivity {
 
             }
         };
+        showSettingsIntroButton.setOnClickListener(listenerSettingsIntroButton);
 
         // Que Boton Sign In Main vaya a la Actividad LogInActivity cuando se le haga Click.
         View.OnClickListener listenerSigninMainButton = new View.OnClickListener() {
