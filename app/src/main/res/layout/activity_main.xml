@@ -5,36 +5,40 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.sniff.sniffbeta.MainActivity"
-    android:background="#e0ab18">
+    android:background="#ffffff">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tag Pet"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Tag a pet"
         android:id="@+id/TagPetIntro"
         android:layout_alignParentBottom="true"
         android:width="30dp"
         android:height="100dp"
         android:textSize="10dp"
-        android:background="#e15258"
-        android:textColor="#fffefefa" />
+        android:background="#3079ab"
+        android:textColor="#fffefefa"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="40dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Search My Pet"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="I lost my pet!"
         android:id="@+id/SearchMyPetIntro"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/TagPetIntro"
         android:width="30dp"
         android:height="100dp"
         android:textSize="10dp"
-        android:background="#e15258"
-        android:textColor="#fffefefa" />
+        android:background="#3079ab"
+        android:textColor="#fffefefa"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="40dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
         android:text="Profile"
         android:id="@+id/ProfileIntro"
         android:layout_alignParentBottom="true"
@@ -43,26 +47,14 @@
         android:width="30dp"
         android:height="100dp"
         android:textSize="10dp"
-        android:background="#e15258"
-        android:textColor="#fffefefa" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Settings"
-        android:id="@+id/SettingsIntro"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:width="30dp"
-        android:height="100dp"
-        android:textSize="10dp"
+        android:background="#3079ab"
         android:textColor="#fffefefa"
-        android:background="#e15258" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="40dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
         android:text="Sign In"
         android:id="@+id/SigninMain"
         android:layout_alignParentTop="true"
@@ -70,11 +62,11 @@
         android:layout_alignParentEnd="true"
         android:textSize="10dp"
         android:textColor="#fdfdffff"
-        android:background="#e15258" />
+        android:background="#3079ab" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
         android:text="Create account"
         android:id="@+id/CreateAccount"
         android:textSize="10dp"
@@ -82,7 +74,8 @@
         android:layout_alignLeft="@+id/SigninMain"
         android:layout_alignStart="@+id/SigninMain"
         android:textColor="#fffefefa"
-        android:background="#e15258" />
+        android:background="#3079ab"
+        android:layout_marginTop="10dp" />
 
     <ImageView
         android:layout_width="350dp"
@@ -93,7 +86,6 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="false"
         android:layout_alignParentRight="false"
-        android:layout_marginLeft="10dp"
         android:src="@drawable/map"
         android:contentDescription="imageMap" />
 
@@ -103,12 +95,23 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="SNIFF!"
         android:id="@+id/textViewAppName"
-        android:layout_alignBottom="@+id/CreateAccount"
+        android:textSize="50dp"
+        android:textColor="#3079ab"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_below="@+id/SigninMain"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/dog_icon"
+        android:layout_below="@+id/SigninMain"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="70dp"
-        android:textColor="#e15258"
-        android:textStyle="bold"
-        android:typeface="sans" />
+        android:layout_above="@+id/imageViewMap"
+        android:layout_alignRight="@+id/TagPetIntro"
+        android:layout_alignEnd="@+id/TagPetIntro" />
 
 </RelativeLayout>

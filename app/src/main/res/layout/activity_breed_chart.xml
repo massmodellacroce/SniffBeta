@@ -13,13 +13,17 @@
         android:id="@+id/imageView" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
         android:text="Back"
         android:id="@+id/backBreedingChart"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="back"/>
+        android:onClick="Back"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#51b46d"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAlignment="center" />
 
 </RelativeLayout>
