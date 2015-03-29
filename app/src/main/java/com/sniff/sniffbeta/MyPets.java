@@ -1,7 +1,6 @@
 package com.sniff.sniffbeta;
 
 import android.content.Intent;
-import android.media.Image;
 import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -17,6 +16,8 @@ import java.io.IOException;
 
 public class MyPets extends ActionBarActivity {
 
+    ImageView imageViewPet1;
+    ImageView imageViewPet2;
     ImageView imageViewPet3;
 
     @Override
@@ -24,38 +25,61 @@ public class MyPets extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_pets);
 
-        imageViewPet3=(ImageView) findViewById(R.id.imagePet1);
+        imageViewPet1 = (ImageView) findViewById(R.id.imagePet1);
+        imageViewPet2 = (ImageView) findViewById(R.id.imagePet2);
+        imageViewPet3 = (ImageView) findViewById(R.id.imagePet3);
     }
 
-    public void Cancel (View view){
+    public void Cancel(View view) {
 
         startActivity(new Intent(this, ProfileActivity.class));
     }
 
-    public void addMyPet (View view){
+    public void addMyPet1(View view) {
+        addMyPet(view, 1);
+    }
+
+    public void addMyPet2(View view) {
+        addMyPet(view, 2);
+    }
+
+    public void addMyPet3(View view) {
+        addMyPet(view, 3);
+    }
+
+    private void addMyPet(View view, int number) {
         Intent intent = new Intent();
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(intent, "Select Pet Image"), 1);
+        startActivityForResult(Intent.createChooser(intent, "Select Pet Image"), number);
     }
 
     public void onActivityResult(int reqCode, int resCode, Intent data) {
-        if (resCode == RESULT_OK){
-            if (reqCode == 1)
-                try {
-                    imageViewPet3.setImageBitmap(MediaStore.Images.Media.getBitmap(
+        if (resCode == RESULT_OK) {
+
+            ImageView selectedImage= imageViewPet1;
+            if (reqCode == 1) {
+                selectedImage = imageViewPet1;
+
+            } else if (reqCode == 2) {
+                selectedImage = imageViewPet2;
+
+            } else if (reqCode == 3) {
+                selectedImage = imageViewPet3;
+            }
+            try {
+                    selectedImage.setImageBitmap(MediaStore.Images.Media.getBitmap(
                             this.getContentResolver(), data.getData()));
-                    Log.d("MyPets","Setting Image");
-                } catch (IOException e) {
-                    Toast.makeText(getApplicationContext(), "Couldn't save image",Toast.LENGTH_LONG);
-                    e.printStackTrace();
-                }
+                Log.d("MyPets", "Setting Image");
+                Toast.makeText(getApplicationContext(), "Saved successfully!", Toast.LENGTH_SHORT);
+            } catch (IOException e) {
+                Toast.makeText(getApplicationContext(), "Couldn't save image", Toast.LENGTH_LONG);
+                e.printStackTrace();
+            }
         }
     }
 
-    public void save (View view){
-        Toast.makeText(this, "Saved Successfully", Toast.LENGTH_LONG).show();
-    }
+
 
 
 
