@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.sniff.sniffbeta.MyPets"
-    android:background="#3079ab">
+    android:background="#ffffff">
 
 
     <Button
@@ -15,9 +15,9 @@
         android:id="@+id/saveMyPets"
         android:layout_alignParentBottom="true"
         android:onClick="save"
-        android:textColor="#3079ab"
+        android:textColor="#ffffff"
         android:textStyle="bold"
-        android:background="#ffffff"
+        android:background="#3079ab"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="20dp" />
 
@@ -32,9 +32,9 @@
         android:layout_marginRight="42dp"
         android:layout_marginEnd="42dp"
         android:onClick="Cancel"
-        android:textColor="#3079ab"
+        android:textColor="#ffffff"
         android:textStyle="bold"
-        android:background="#ffffff" />
+        android:background="#3079ab" />
 
     <Switch
         android:layout_width="wrap_content"
@@ -51,7 +51,8 @@
         android:layout_alignTop="@+id/imagePet1"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:textColor="#3079ab" />
 
     <Switch
         android:layout_width="wrap_content"
@@ -61,7 +62,8 @@
         android:checked="false"
         android:layout_alignTop="@+id/imagePet2"
         android:layout_alignRight="@+id/switchPet1"
-        android:layout_alignEnd="@+id/switchPet1" />
+        android:layout_alignEnd="@+id/switchPet1"
+        android:textColor="#3079ab" />
 
     <ImageView
         android:layout_width="120dp"
@@ -105,6 +107,43 @@
         android:checked="false"
         android:layout_alignTop="@+id/imagePet3"
         android:layout_alignLeft="@+id/switchPet2"
-        android:layout_alignStart="@+id/switchPet2" />
+        android:layout_alignStart="@+id/switchPet2"
+        android:textColor="#3079ab" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/editPet1"
+        android:layout_alignBottom="@+id/imagePet1"
+        android:layout_alignRight="@+id/switchPet2"
+        android:layout_alignEnd="@+id/switchPet2"
+        android:textColor="#ffffff"
+        android:background="#3079ab"
+        android:onClick="addMyPet"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/editPet2"
+        android:layout_above="@+id/imagePet3"
+        android:layout_alignRight="@+id/switchPet3"
+        android:layout_alignEnd="@+id/switchPet3"
+        android:textColor="#ffffff"
+        android:background="#3079ab"
+        android:onClick="addMyPet"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Pet"
+        android:id="@+id/addPet"
+        android:textColor="#ffffff"
+        android:background="#3079ab"
+        android:onClick="addMyPet"
+        android:layout_alignBottom="@+id/imagePet3"
+        android:layout_alignRight="@+id/switchPet3"
+        android:layout_alignEnd="@+id/switchPet3" />
 
 </RelativeLayout>

@@ -79,6 +79,12 @@ public class MyPets extends ActionBarActivity {
         }
     }
 
+    public void addMyPet (View view){
+
+        Intent intent = new Intent(this,RegisterLostPet.class);
+        startActivity(intent);
+    }
+
 
 
 
