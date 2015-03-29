@@ -8,46 +8,12 @@
     >
 
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/pet1"
-        android:minHeight="120dp"
-        android:minWidth="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/pet2"
-        android:minHeight="120dp"
-        android:minWidth="120dp"
-        android:layout_below="@+id/pet1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/addPet"
-        android:layout_below="@+id/pet2"
-        android:layout_alignRight="@+id/pet2"
-        android:layout_alignEnd="@+id/pet2"
-        android:minWidth="120dp"
-        android:minHeight="120dp"
-        android:onClick="addMyPet"/>
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"
         android:id="@+id/saveMyPets"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/addPet"
-        android:layout_alignEnd="@+id/addPet"
         android:onClick="save"/>
 
     <Button
@@ -74,7 +40,6 @@
         android:nestedScrollingEnabled="false"
         android:longClickable="false"
         android:clickable="false"
-        android:layout_above="@+id/pet2"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -84,8 +49,39 @@
         android:text="Lost Pet 2"
         android:id="@+id/switchPet2"
         android:checked="false"
-        android:layout_above="@+id/addPet"
         android:layout_alignLeft="@+id/switchPet1"
         android:layout_alignStart="@+id/switchPet1" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imagePet1"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:focusable="true"
+        android:onClick="addMyPet"
+       android:src="@drawable/default_dog_icon" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imagePet2"
+        android:layout_below="@+id/imagePet1"
+        android:layout_alignRight="@+id/imagePet1"
+        android:layout_alignEnd="@+id/imagePet1"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/default_dog_icon" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imagePet3"
+        android:layout_below="@+id/imagePet2"
+        android:layout_alignLeft="@+id/imagePet2"
+        android:layout_alignStart="@+id/imagePet2"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/default_dog_icon" />
 
 </RelativeLayout>
