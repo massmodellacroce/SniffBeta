@@ -16,7 +16,7 @@
         android:longClickable="false"
         android:minHeight="120dp"
         android:minWidth="120dp"
-        android:background="#e15258"
+        android:background="#3079ab"
         android:textColor="#ffffff"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
@@ -32,7 +32,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:minWidth="120dp"
-        android:background="#e15258"
+        android:background="#3079ab"
         android:textColor="#ffffff" />
 
     <Button
@@ -44,7 +44,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:minHeight="60dp"
-        android:background="#e15258"
+        android:background="#3079ab"
         android:textColor="#ffffff"
         android:layout_marginBottom="30dp" />
 
@@ -52,9 +52,37 @@
         android:layout_width="80dp"
         android:layout_height="50dp"
         android:id="@+id/imageView3"
-        android:src="@drawable/dogfootprint"
+        android:src="@drawable/blue_dog_footprint"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="91dp" />
+        android:layout_toLeftOf="@+id/backprofile"
+        android:layout_toStartOf="@+id/backprofile"
+        android:layout_marginTop="57dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/blue_dog_footprint"
+        android:layout_above="@+id/backprofile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView5"
+        android:src="@drawable/blue_dog_footprint"
+        android:layout_above="@+id/imageView4"
+        android:layout_toRightOf="@+id/backprofile"
+        android:layout_toEndOf="@+id/backprofile" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView6"
+        android:src="@drawable/blue_dog_footprint"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignLeft="@+id/MyPets"
+        android:layout_alignStart="@+id/MyPets" />
 
 </RelativeLayout>

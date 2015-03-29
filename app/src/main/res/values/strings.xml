@@ -7,7 +7,7 @@
     <string name="title_activity_register">Register Activity</string>
     <string name="title_activity_registration_profile">Register Activity</string>
     <string name="title_activity_main">Sniff beta</string>
-    <string name="title_activity_registration_lost_pet">Registration Lost Pet</string>
+    <string name="title_activity_registration_lost_pet">Register a Pet</string>
     <string name="pref_title_sync_frequency" />
     <string name="pref_title_system_sync_settings" />
     <string name="pref_title_social_recommendations" />
