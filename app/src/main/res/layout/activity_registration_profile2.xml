@@ -43,7 +43,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="phone"
+        android:inputType="textPostalAddress"
         android:ems="10"
         android:id="@+id/editAdress"
         android:layout_below="@+id/editEmail"
@@ -54,7 +54,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPostalAddress"
+        android:inputType="phone"
         android:ems="10"
         android:id="@+id/editPhone"
         android:layout_below="@+id/editAdress"
